@@ -15,7 +15,8 @@ export default function Home() {
       <InfoBlock />
       <p className="sm:w-1/3 text-center p-4">
         I&apos;m passionate about building easy-to-use and snappy frontend
-        applications. I like hockey and moderate-length walks on the beach.
+        applications. I like hockey, UI/UX Development and moderate-length walks
+        on the beach.
       </p>
       <LinksBlock />
     </main>
