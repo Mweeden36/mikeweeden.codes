@@ -23,10 +23,10 @@ const links = [
 const rows = links.reduce((rowsMarkup, rowObj) => {
   return [
     ...rowsMarkup,
-    <li className="pb-2 inline" key={rowObj.href}>
+    <li className="pb-2 px-4 inline hover:text-primary" key={rowObj.href}>
       <Link href={rowObj.href} target="_blank">
         <rowObj.icon className="block sm:inline" />
-        <span className="sm:pl-2 sm:inline hidden">{rowObj.text}</span>
+        <span className="sm:pl-2 lg:inline hidden">{rowObj.text}</span>
       </Link>
     </li>,
   ];
@@ -35,7 +35,7 @@ const rows = links.reduce((rowsMarkup, rowObj) => {
 export default function LinksBlock() {
   return (
     <div className="w-full flex justify-center">
-      <div className="bg-advanced-darkness p-6 sm:w-1/3 rounded-md flex flex-col shadow-md">
+      <div className="bg-advanced-darkness p-6 rounded-md flex flex-col shadow-md">
         <h2 className="self-center text-xl pb-6 font-semibold">
           Let&apos;s connect
         </h2>
