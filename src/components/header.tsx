@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Moon, Sun } from "react-feather";
 import { useEffect, useState } from "react";
 
-const links = ["Home", "Values"];
+const links = ["Home", "Gus", "Values"];
 
 const getLinkItems = () => {
   return links.map((link) => {

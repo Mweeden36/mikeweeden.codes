@@ -1,6 +1,6 @@
 import { Gift, MessageCircle, TrendingUp, Users } from "react-feather";
 
-export default function Resume() {
+export default function Values() {
   return (
     <main className="flex flex-grow flex-col items-center justify-center items-center p-8 w-full">
       <div className="flex flex-col max-w-3xl gap-4 dark:bg-advanced-darkness bg-primary p-6 shadow-md rounded-md">
