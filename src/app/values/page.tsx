@@ -12,7 +12,7 @@ export default function Values() {
             <li className="pb-2 pt-4">
               <b className="flex justify-start items-center">
                 <MessageCircle className="inline mr-2" />
-                Honesty
+                Transparency
               </b>
               <p className="pt-2">
                 Honest and direct communication keeps things running smoothly,
@@ -26,8 +26,7 @@ export default function Values() {
               </b>
               <p className="pt-2">
                 Don&apos;t let perfect be the enemy of good! Things are never
-                perfect the first time, but together we can keep moving towards
-                &ldquo;better&rdquo;.
+                perfect the first time, but we can always make it better.
               </p>
             </li>
             <li className="pb-2 pt-4">
@@ -47,9 +46,8 @@ export default function Values() {
                 Fun
               </b>
               <p className="pt-2">
-                Work should be fun, and I like to take the opportunity to make
-                some corny jokes. I hope you don&apos;t mind because I
-                can&apos;t contain myself!
+                Work should be fun, and I do my best to keep things light!
+                Typically in the form of bad jokes.
               </p>
             </li>
           </ul>
