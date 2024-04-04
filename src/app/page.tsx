@@ -11,6 +11,7 @@ export default function Home() {
         alt="Mike's head"
         width="216"
         height="216"
+        priority
       />
       <InfoBlock />
       <p className="md:w-1/3 text-center p-4 max-w-3xl">
