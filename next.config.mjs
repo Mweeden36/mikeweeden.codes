@@ -5,6 +5,15 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    async redirects() {
+        return [
+            {
+                source: "/ffl",
+                destination: "https://docs.google.com/forms/d/e/1FAIpQLScAy9aNdAsaKqFaE5YwaoGteJ-FqCQoY88_BCR8sw6oF2TAeA/viewform",
+                permanent: false,
+            }
+        ]
+    }
 };
 
 export default nextConfig;
