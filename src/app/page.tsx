@@ -15,7 +15,7 @@ export default function Home() {
       />
       <InfoBlock />
       <p className="md:w-1/3 text-center p-4 max-w-3xl">
-        I&apos;m passionate about building easy-to-use, and snappy frontend
+        I&apos;m passionate about building snappy, easy-to-use frontend
         applications. I like hockey, UI/UX Development, and recently picked up
         golf.
       </p>
