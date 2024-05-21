@@ -8,9 +8,12 @@ export default async function ImageGallery(props: {
 }) {
   const imageDirectory = path.join(process.cwd(), props.imageDir);
   const imageFilenames = await fs.readdir(imageDirectory);
+  const filteredFilenames = imageFilenames.filter((fileName) =>
+    fileName.endsWith("_sm.jpg")
+  );
   return (
     <div className="flex-grow py-4 grid grid-cols-gallery auto-rows-[10px]">
-      {imageFilenames.map((imageName: string) => (
+      {filteredFilenames.map((imageName: string) => (
         <ImageContainer
           imagePath={props.imageDir}
           imageName={imageName}
