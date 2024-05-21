@@ -22,15 +22,14 @@ export default async function ImageContainer(props: {
   const galleryHeight = Math.ceil(16 * 16 * widthHeightRatio);
   const photoSpans = Math.ceil(galleryHeight / 10) + 1;
 
+  const imageLink = `${props.imagePath.replace("/public", "")}/pictures/${props.imageName.replace("_sm.jpg", ".jpg")}`;
+
   return (
     <div
       className="w-64 justify-self-center relative cursor-pointer"
       style={{ gridRow: `span ${photoSpans}` }}
     >
-      <Link
-        href={`${props.imagePath.replace("/public", "")}/pictures/${props.imageName}`}
-        className="grid place-content-center"
-      >
+      <Link href={imageLink} className="grid place-content-center">
         <Image
           className="object-cover rounded-md bg-clip-content hover:drop-shadow-md hover:opacity-80"
           width={width}
