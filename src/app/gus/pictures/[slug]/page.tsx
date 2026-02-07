@@ -15,9 +15,10 @@ export async function generateStaticParams() {
 export default async function ImagePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const image = await import(`@/../public/gus/${params.slug}`);
+  const resolvedParams = await params;
+  const image = await import(`@/../public/gus/${resolvedParams.slug}`);
 
   return (
     <main className="flex flex-auto flex-col">
